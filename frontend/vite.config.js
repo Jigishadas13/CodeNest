@@ -6,7 +6,8 @@ export default defineConfig(({ mode }) => {
   return {
     base: '/',
     plugins: [react()],
-    server: proxy: {
+    server: {
+      proxy: {
         '/api': {
           target: 'https://codenestbackend1.onrender.com',
           changeOrigin: true,
@@ -15,7 +16,7 @@ export default defineConfig(({ mode }) => {
       },
       port: 5173,
       strictPort: true,
-    }:{},
+    },
     define: {
       __APP_ENV__: JSON.stringify(env.APP_ENV),
     },
