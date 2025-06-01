@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
       },
       port: 5173,
       strictPort: true,
-    },
+    }:{},
     define: {
       __APP_ENV__: JSON.stringify(env.APP_ENV),
     },
