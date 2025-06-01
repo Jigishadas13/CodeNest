@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   return {
     base: '/',
     plugins: [react()],
-    server: {
+    server: server: mode === 'development' ? {
       proxy: {
         '/api': {
           target: 'http://localhost:3000',
