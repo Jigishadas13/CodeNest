@@ -6,10 +6,9 @@ export default defineConfig(({ mode }) => {
   return {
     base: '/',
     plugins: [react()],
-    server: mode === 'development' ? {
-      proxy: {
+    server: proxy: {
         '/api': {
-          target: 'http://localhost:3000',
+          target: 'https://codenestbackend1.onrender.com',
           changeOrigin: true,
           secure: false,
         },
