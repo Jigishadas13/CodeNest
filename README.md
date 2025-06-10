@@ -194,7 +194,7 @@ Installation
 
 # Clone repository
 
-git clone https://github.com/suveerprasad/cp-tracker.git
+git clone [https://github.com/Jigishadas13/CodeNest.git]
 
 cd cp-tracker
 
